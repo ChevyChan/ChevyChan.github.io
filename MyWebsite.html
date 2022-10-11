@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        img{
+            height: 300px;
+            border-radius: 10%;
+            float:left;
+            margin-top: 20px;
+        }
+
+        .aboutme{
+            background-color: black;
+            padding: 100px;
+            color:white;
+        }
+
+        .aboutme-details{
+          text-align: left;
+          width: 50%;
+          margin-left: 210px;
+          margin-top: 50px;
+        }
+
+        .container-fluid{
+          background-color: skyblue;
+          color: white;
+        }
+
+        .youtube{
+          background-color: white;
+          padding:50px;
+          text-align: center;
+        }
+
+        form{
+          padding: 50px;
+        }
+
+    </style>
+  </head>
+  <body onload="alert('Welcome! :)')">
+    <div class="nav-bar">
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">IS216</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="aboutme">
+      <div class="aboutme-img">
+        <img src="C:\Users\kamun\Downloads\IMG_0057.jpg" alt="File not found"/>
+      </div>
+      <div class="aboutme-details">
+        <h1>About Me <span class="badge bg-success">SMU</span></h1>
+        <p>My name is Chevy. I am a Year 2 Information Systems student. I am happy to be in this class and want an A+ grade for this module! :) Please allow location to view weather of your current location! :D</p>
+        <p class="h2">Current Position</p>
+        <p id="position"></p>
+        <p id="weather"></p>
+      </div>
+    </div>
+    <div class="youtube">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/kF6-20x8Bpo?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <form class="bg-warning">
+      <div class="mb-3">
+        <label for="exampleInputName1" class="form-label">Name</label>
+        <input type="text" class="form-control" id="exampleInputName1" aria-describedby="name">
+        <div id="emailHelp" class="form-text">We'll never share your name with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <select class="form-select" id="relation"  aria-label="Default select example">
+          <option selected>Relationship Status</option>
+          <option value="1">Single</option>
+          <option value="2">Alone</option>
+          <option value="3">Wizard</option>
+        </select>
+      </div>
+      <h3>Favourite Fruits</h3>
+      <div id="favouriteFruits">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+          <label class="form-check-label" for="flexRadioDefault1" value="HoneyDew">
+            HoneyDew
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+          <label class="form-check-label" for="flexRadioDefault2" value="Watermelon">
+            Watermelon
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+          <label class="form-check-label" for="flexRadioDefault3" value="Honeydew">
+            Honeydew
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+          <label class="form-check-label" for="flexRadioDefault4" value="Grapes">
+            Grapes
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+          <label class="form-check-label" for="flexRadioDefault5" value="Pineapples">
+            Pineapples
+          </label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary mt-2" id="btn_submit">Submit</button>
+      </form>
+  </div>
+  <h2 class="text-center mt-3">Hall of Fame</h2>
+  <div id="card" class="mx-5 my-5">
+    
+  </div>
+    <!--Accordion-->
+    <div style="padding:50px;">
+      <h2>More about me!</h2> 
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              Occupation
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">1</span>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Undergraduate - Student from SMU</strong>  
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Interest
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">2</span>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Software Engineer - SAP</strong>
+              <strong>System Architect</strong> 
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Hobby
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3</span>
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Eating, Drinking, Sleeping</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!--Axios CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script>
+      document.getElementById("btn_submit").addEventListener('click', (e) => {
+        e.preventDefault();
+
+        let name = document.getElementById("exampleInputName1");
+        let relationStatus = document.getElementById("relation");
+        let favFruit = document.getElementById("favouriteFruits");
+        var card_list = document.getElementById("card");
+
+        if(name != ""){
+          alert("Application Received " + name.value + "! You will be notified if you are shortlisted!");
+
+          var value = relationStatus.value;
+          var relationshipStatus = relationStatus.options[relationStatus.selectedIndex].text;
+
+          var fruit_value = "";
+
+          for(var i = 0; i < favFruit.children.length; i++){
+            if(favFruit.children[i].children[0].checked){
+              fruit_value = favFruit.children[i].children[1].innerText;
+              console.log(fruit_value);
+            }
+          }
+
+          var str = `
+            <div class="card mb-3 mx-auto" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a0/Sandy_Cheeks.svg/1200px-Sandy_Cheeks.svg.png" style="width:150px; height:150px;" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">${name.value}</h5>
+                    <p class="card-text">Relationship Status: ${relationshipStatus}</p>
+                    <p class="card-text"><small class="text-muted">Favourite Fruits: ${fruit_value}</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          `;
+
+          card_list.innerHTML = str;
+        }else{
+          alert("What's you name? XD")
+        }
+      })
+
+      var x = document.getElementById("position");
+      var y = document.getElementById("weather");
+
+      var long = "";
+      var lat = "";
+      var str = "";
+
+      function current_weather(lat, long){
+
+        var api_endpoint_url = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + long + "&appid=b9e4f07ae4648ba1d1e0d7838a576834&units=metric";
+
+        axios.get(api_endpoint_url)
+        .then(response =>{
+          var cur_weather = response.data;
+          console.log(cur_weather);
+
+          str = `
+            <p>Country: ${cur_weather.name}</p>
+            <p>Temperature: ${cur_weather.main.temp}<p>
+          `;
+
+          y.innerHTML = str;
+        })
+        .catch(error => {
+          console.log(error.message);
+        })
+      }
+
+      function getPosition(){
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+        } else { 
+          x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+      }
+      
+      function showPosition(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude + 
+        "<br>Longitude: " + position.coords.longitude;
+
+        long = position.coords.longitude;
+        lat = position.coords.latitude;
+
+        setTimeout(current_weather(lat, long), 5000);
+      }
+
+      
+
+      window.onload = getPosition();
+        
+      
+
+      
+
+    </script>
+  </body>
+</html>
